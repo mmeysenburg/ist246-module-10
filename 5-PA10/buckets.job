@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#SBATCH -n 6 
+#SBATCH --output=PA10-%A.out
+#SBATCH --mail-user mark.meysenburg@doane.edu
+#SBATCH --mail-type ALL
+
+module load openmpi
+mpirun PA10.mpi
